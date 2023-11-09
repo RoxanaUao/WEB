@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase CRUD</title>
+
+    <!-- BOOTSWATCH -->
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/yeti/bootstrap.min.css"
+      
+    />
+  </head>
+
+  <body class="bg-dark">
+    <!-- ADD TASK -->
+    <div class="container p-4">
+        
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+                <h1 class="h4">Agregar alumno</h1>
+  
+                <form id="alumno-form">
+                  <label for="nombre">Nombre:</label>
+                  <input
+                    type="text"
+                    id="alumno-nombre"
+                    class="form-control mb-3"
+                    class="My Nombre"
+                    placeholder="Nombre de alumno"
+                    autofocus
+                  />
+                  <label for="grado">Grado:</label>
+                  <input
+                    type="text"
+                    id="alumno-grado"
+                    class="form-control mb-3"
+                    class="My grado"
+                    placeholder="Grado de alumno"
+                    autofocus
+                  />
+                  <label for="padre">Padre:</label>
+                  <input
+                    type="text"
+                    id="alumno-padre"
+                    class="form-control mb-3"
+                    class="My Nombre"
+                    placeholder="Padre del alumno"
+                    autofocus
+                  />
+                  <label for="carril">Carril:</label>
+                  <input
+                    type="text"
+                    id="alumno-carril"
+                    class="form-control mb-3"
+                    class="My carril"
+                    placeholder="Número de carril"
+                    autofocus
+                  />
+                  <button class="btn btn-primary" id="btn-alumno-form">Save</button>
+                </form>
+                
+              </div>
+          </div>
+        </div>
+        <!-- Tasks List -->
+        <div class="col-md-6" id="carril-container">
+            <div class="row align-items-start"> 
+                <div class="col">
+                    Una de tres columnas
+                    <div class="col-md-6" id="alumnos1-container"></div>
+                </div>
+                <div class="col">
+                    Una de tres columnas
+                    <div class="col-md-6" id="alumnos2-container"></div>
+                </div>
+                <div class="col">
+                    Una de tres columnas
+                    <div class="col-md-6" id="alumnos3-container"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6" id="tasks-container"></div>
+        <div class="col-md-6" id="alumnos-container"></div>
+      </div>
+    </div>
+
+    <!-- CUSTOM CODE -->
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
+</html>
