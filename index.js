@@ -56,14 +56,30 @@ window.addEventListener("DOMContentLoaded", async (e) => {
     
         querySnapshot.forEach((doc) => {
           const alumno = doc.data();
+          const color = "";
     
-          alumnos1Container.innerHTML += `
-          <div class="card card-body mt-2 border-primary">
-        <h3 class="h5">${alumno.nombre}</h3>
-        <p>${alumno.carril}</p>
-        <p>${alumno.grado}</p>
-        <p>${alumno.padre}</p>
-      </div>`;
+          if (alumno.carril == 1){
+            if(alumno.grado == "primaria"){
+                alumnos1Container.innerHTML += `
+                <div class="card text-center text-white bg-info mb-3" style="max-width: 40rem;">
+                    <h3 class="h5">${alumno.nombre}</h3>
+                </div>`;
+            }
+            if(alumno.grado == "bachillerato"){
+                alumnos1Container.innerHTML += `
+                <div class="card text-center text-white bg-primary mb-3" style="max-width: 40rem;">
+                    <h3 class="h5">${alumno.nombre}</h3>
+                </div>`;
+            }
+            if(alumno.grado == "pre-escolar"){
+                alumnos1Container.innerHTML += `
+                <div class="card text-center text-white bg-success mb-3" style="max-width: 40rem;">
+                    <h3 class="h5">${alumno.nombre}</h3>
+                </div>`;
+            }
+            
+          }
+          
         });
         //aqui termina el snapsphot
 
