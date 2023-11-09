@@ -1,10 +1,5 @@
 import {
-    onGetTasks,
-    saveTask,
-    deleteTask,
-    getTask,
     updateTask,
-    getTasks,
     onGetAlumnos,
     saveAlumno,
   } from "./firebase.js";
@@ -13,11 +8,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     
 })
 
-const taskForm = document.getElementById('task-form')
 const alumnoForm = document.getElementById('alumno-form')
-
-const tasksContainer = document.getElementById("tasks-container");
-const alumnosContainer = document.getElementById("alumnos-container");
 const alumnos1Container = document.getElementById("alumnos1-container");
 const alumnos2Container = document.getElementById("alumnos2-container");
 const alumnos3Container = document.getElementById("alumnos3-container");
